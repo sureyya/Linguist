@@ -1,0 +1,45 @@
+﻿@model Linguist.Model.Article
+
+@{
+    ViewBag.Title = "title";
+}
+
+
+
+
+<h2>@Model.Title</h2>
+
+
+<article>
+  <div id="article" data-bind="template: { name: 'article-template', with: Article }"></div>
+    <br />
+
+    <div id="translatedText" data-bind="html:$data.Text" >
+    </div>
+  
+</article>
+
+
+
+
+
+<script type="text/html" id="article-template">   
+    <!--ko with:Article -->   
+    <div data-bind="foreach:Sentences">
+        <span data-bind="foreach:Words">
+            <span data-bind="click: selected,
+                             text:$data.Text,
+                             style: { color: $data.BorderEnabled() ? 'red' : 'black'},
+                             event: { mouseover: enableBorder, mouseout: disableBorder }"></span>                   
+            </span>
+        </div>
+    <!--/ko -->
+</script>
+
+
+@section scripts
+{
+    <script type="text/javascript">var _articleId = '@Model.Id';</script>    
+    <script src="@Url.Content("~/Scripts/linguist.article.js")" type="text/javascript"></script>
+    
+}

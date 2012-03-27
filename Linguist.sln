@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linguist", "Linguist\Linguist.csproj", "{6E082729-D062-466F-8220-106F5C6954E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linguist.Tests", "Linguist.Tests\Linguist.Tests.csproj", "{7E511D3B-6502-4833-8AA8-BEE8E9BF3B44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linguist.Model", "Linguist.Model\Linguist.Model.csproj", "{AB159D8B-F26B-4892-9B9A-74562E7A039E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linguist.Repository", "Linguist.Repository\Linguist.Repository.csproj", "{BED01E49-0CE4-4C18-AD7F-6E34ADF0D34D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E082729-D062-466F-8220-106F5C6954E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E082729-D062-466F-8220-106F5C6954E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E082729-D062-466F-8220-106F5C6954E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E082729-D062-466F-8220-106F5C6954E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E511D3B-6502-4833-8AA8-BEE8E9BF3B44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E511D3B-6502-4833-8AA8-BEE8E9BF3B44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E511D3B-6502-4833-8AA8-BEE8E9BF3B44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E511D3B-6502-4833-8AA8-BEE8E9BF3B44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB159D8B-F26B-4892-9B9A-74562E7A039E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB159D8B-F26B-4892-9B9A-74562E7A039E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB159D8B-F26B-4892-9B9A-74562E7A039E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB159D8B-F26B-4892-9B9A-74562E7A039E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BED01E49-0CE4-4C18-AD7F-6E34ADF0D34D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED01E49-0CE4-4C18-AD7F-6E34ADF0D34D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED01E49-0CE4-4C18-AD7F-6E34ADF0D34D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED01E49-0CE4-4C18-AD7F-6E34ADF0D34D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal

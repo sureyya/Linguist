@@ -1,0 +1,16 @@
+﻿@model IList<Linguist.Model.Article> 
+
+@{
+    ViewBag.Title = "Articles";    
+}
+
+<h2>Articles</h2>
+
+
+
+@foreach (var article in Model)
+{
+      @Html.ActionLink(article.Title , "Detail", "Article" ,new {id=article.Id},null)<br/>
+}
+
+
