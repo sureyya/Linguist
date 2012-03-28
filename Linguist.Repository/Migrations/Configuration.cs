@@ -5,6 +5,7 @@
     using System.Data.Entity.Migrations;
     using System.Linq;
     using Linguist.Model;
+    using System.Collections.Generic;
 
     internal sealed class Configuration : DbMigrationsConfiguration<Linguist.Repository.LinguistContext>
     {
