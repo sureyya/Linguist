@@ -7,10 +7,12 @@ namespace Linguist.Repository.Migrations
     {
         public override void Up()
         {
+           
         }
         
         public override void Down()
         {
+          
         }
     }
 }

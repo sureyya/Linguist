@@ -13,6 +13,8 @@ namespace Linguist
         public static  void Init()
         {
             var container = BuildUnityContainer();
+            
+            log4net.Config.XmlConfigurator.Configure(); 
 
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
