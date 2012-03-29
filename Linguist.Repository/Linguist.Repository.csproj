@@ -74,13 +74,9 @@
     <Compile Include="EntityConfigurations.cs" />
     <Compile Include="LinguistContext.cs" />
     <Compile Include="LinguistDBInitializer.cs" />
-    <Compile Include="Migrations\201203281919456_initial.cs" />
-    <Compile Include="Migrations\201203281919456_initial.Designer.cs">
-      <DependentUpon>201203281919456_initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201203291235241_AddLog4netTable.cs" />
-    <Compile Include="Migrations\201203291235241_AddLog4netTable.Designer.cs">
-      <DependentUpon>201203291235241_AddLog4netTable.cs</DependentUpon>
+    <Compile Include="Migrations\201203291439511_initial.cs" />
+    <Compile Include="Migrations\201203291439511_initial.Designer.cs">
+      <DependentUpon>201203291439511_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
