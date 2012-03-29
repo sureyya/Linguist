@@ -39,6 +39,9 @@ namespace Linguist.Repository.Repositories
 
         public IList<Article> GetAllArticles()
         {
+            logger = LogManager.GetLogger(this.GetType());
+
+            logger.Debug(DataContext.Database.Connection.ConnectionString);
             var articles = GetList<Article>();
             return articles.ToList();
         }
