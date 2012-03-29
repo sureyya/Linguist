@@ -10,7 +10,8 @@
 
 @foreach (var article in Model)
 {
-      @Html.ActionLink(article.Title , "Detail", "Article" ,new {id=article.Id},null)<br/>
+      @Html.ActionLink(article.Title , "Detail", "Article" ,new {id=article.Id},null);
+      <br/>
 }
 
 

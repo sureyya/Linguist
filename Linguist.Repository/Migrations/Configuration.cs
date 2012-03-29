@@ -94,8 +94,7 @@
 
             article.Sentences = new List<Sentence> { sentence, sentence2 };
 
-            context.Articles.Add(article);                    
-
+            context.Articles.AddOrUpdate(article);                    
         }
     }
 }

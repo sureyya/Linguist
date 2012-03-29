@@ -15,5 +15,6 @@ namespace Linguist.Model
 
         public IList<Sentence> Sentences { get; set; }
 
+
     }
 }
