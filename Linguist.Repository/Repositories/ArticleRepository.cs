@@ -3,13 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Linguist.Model;
+using log4net;
 
 namespace Linguist.Repository.Repositories
 {
     public class ArticleRepository : RepositoryBase<LinguistContext> ,IArticleRepository
     {
+        private ILog logger;
         public Article GetArticleDetail(Guid articleId)
         {
+            logger = LogManager.GetLogger(this.GetType());
+
+            logger.Debug(DataContext.Database.Connection.ConnectionString);
             var dbArticle = DataContext.Articles
                                             .Include("Sentences")
                                             .Include("Sentences.Words").SingleOrDefault(p => p.Id == articleId);
