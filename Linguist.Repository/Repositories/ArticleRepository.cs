@@ -9,7 +9,7 @@ namespace Linguist.Repository.Repositories
 {
     public class ArticleRepository : RepositoryBase<LinguistContext> ,IArticleRepository
     {
-       // private ILog logger;
+        private ILog logger;
         public Article GetArticleDetail(Guid articleId)
         {
             //logger = LogManager.GetLogger(this.GetType());
@@ -39,9 +39,9 @@ namespace Linguist.Repository.Repositories
 
         public IList<Article> GetAllArticles()
         {
-           // logger = LogManager.GetLogger(this.GetType());
+            logger = LogManager.GetLogger(this.GetType());
 
-            //logger.Debug(DataContext.Database.Connection.ConnectionString);
+            logger.Debug(DataContext.Database.Connection.ConnectionString);
             var articles = GetList<Article>();
             return articles.ToList();
         }

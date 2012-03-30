@@ -22,15 +22,15 @@ namespace Linguist.Controllers
             this.articleRepository = articleRepository;
             this.translationRepository = translationRepository;
             
-            //logger = LogManager.GetLogger(this.GetType());
+            logger = LogManager.GetLogger(this.GetType());
 
         }
         
         public ActionResult Index()
         {
-           // logger.Debug("Started Index Action");
+            logger.Debug("Started Index Action");
            
-           // logger.Info("Ended Index Action");
+            logger.Info("Ended Index Action");
             return View(articleRepository.GetAllArticles());
         }
 
