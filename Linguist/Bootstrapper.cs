@@ -13,8 +13,6 @@ namespace Linguist
         public static  void Init()
         {
             var container = BuildUnityContainer();
-            
-           
 
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
@@ -23,7 +21,9 @@ namespace Linguist
         {
             var container = new UnityContainer();
 
-            Repository.Bootstrapper.Init(container);        
+            Repository.Bootstrapper.Init(container);    
+    
+            Logger.Bootstrapper.Init(container);
 
             container.RegisterControllers();
 

@@ -1,20 +1,18 @@
+using Linguist.Repository.Core;
+using System.Data.Entity.Migrations;
+using Linguist.Model;
+using System.Collections.Generic;
+
 namespace Linguist.Repository.Migrations
 {
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
-    using Linguist.Model;
-    using System.Collections.Generic;
-
-    internal sealed class Configuration : DbMigrationsConfiguration<Linguist.Repository.LinguistContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<LinguistContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(Linguist.Repository.LinguistContext context)
+        protected override void Seed(LinguistContext context)
         {
             var article = new Article { Title = "First Test Article" };
 

@@ -2,6 +2,7 @@
 using System.Linq;
 using Linguist.Model;
 using Linguist.Model.NullModels;
+using Linguist.Repository.Core;
 
 namespace Linguist.Repository.Repositories
 {

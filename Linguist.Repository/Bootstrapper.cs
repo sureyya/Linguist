@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;
+using Linguist.Repository.Core;
 using Linguist.Repository.Repositories;
 using Microsoft.Practices.Unity;
 using Linguist.Repository.Migrations;

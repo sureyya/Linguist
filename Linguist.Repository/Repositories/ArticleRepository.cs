@@ -3,18 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Linguist.Model;
-using log4net;
+using Linguist.Logger;
+using Linguist.Repository.Core;
+
 
 namespace Linguist.Repository.Repositories
 {
     public class ArticleRepository : RepositoryBase<LinguistContext> ,IArticleRepository
     {
-        private ILog logger;
+        private readonly ILogger _logger;
+
+        public ArticleRepository(ILogger logger)
+        {
+            _logger = logger;
+        }
+
         public Article GetArticleDetail(Guid articleId)
         {
-            //logger = LogManager.GetLogger(this.GetType());
-
-            //logger.Debug(DataContext.Database.Connection.ConnectionString);
             var dbArticle = DataContext.Articles
                                             .Include("Sentences")
                                             .Include("Sentences.Words").SingleOrDefault(p => p.Id == articleId);
@@ -39,9 +44,7 @@ namespace Linguist.Repository.Repositories
 
         public IList<Article> GetAllArticles()
         {
-            logger = LogManager.GetLogger(this.GetType());
-
-            logger.Debug(DataContext.Database.Connection.ConnectionString);
+            _logger.LogDebug(DataContext.Database.Connection.ConnectionString);
             var articles = GetList<Article>();
             return articles.ToList();
         }

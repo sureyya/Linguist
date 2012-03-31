@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{637E36
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linguist.Logger", "Linguist.Logger\Linguist.Logger.csproj", "{B61BEBF7-CA0C-4721-97B2-8840CD466FA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{BED01E49-0CE4-4C18-AD7F-6E34ADF0D34D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BED01E49-0CE4-4C18-AD7F-6E34ADF0D34D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BED01E49-0CE4-4C18-AD7F-6E34ADF0D34D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B61BEBF7-CA0C-4721-97B2-8840CD466FA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B61BEBF7-CA0C-4721-97B2-8840CD466FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B61BEBF7-CA0C-4721-97B2-8840CD466FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B61BEBF7-CA0C-4721-97B2-8840CD466FA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

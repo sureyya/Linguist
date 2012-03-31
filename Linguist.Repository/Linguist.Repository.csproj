@@ -40,9 +40,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.5.0.0-beta2\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="log4net">
-      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation">
       <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
     </Reference>
@@ -71,9 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrapper.cs" />
-    <Compile Include="EntityConfigurations.cs" />
-    <Compile Include="LinguistContext.cs" />
-    <Compile Include="LinguistDBInitializer.cs" />
+    <Compile Include="Core\EntityConfigurations.cs" />
+    <Compile Include="Core\LinguistContext.cs" />
     <Compile Include="Migrations\201203291439511_initial.cs" />
     <Compile Include="Migrations\201203291439511_initial.Designer.cs">
       <DependentUpon>201203291439511_initial.cs</DependentUpon>
@@ -84,13 +80,17 @@
     <Compile Include="Repositories\IArticleRepository.cs" />
     <Compile Include="Repositories\ITranslationRepository.cs" />
     <Compile Include="Repositories\TranslationRepository.cs" />
-    <Compile Include="RepositoryBase.cs" />
+    <Compile Include="Core\RepositoryBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Linguist.Logger\Linguist.Logger.csproj">
+      <Project>{B61BEBF7-CA0C-4721-97B2-8840CD466FA9}</Project>
+      <Name>Linguist.Logger</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Linguist.Model\Linguist.Model.csproj">
       <Project>{AB159D8B-F26B-4892-9B9A-74562E7A039E}</Project>
       <Name>Linguist.Model</Name>
