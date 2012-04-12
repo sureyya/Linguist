@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{637E36
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linguist.Logger", "Linguist.Logger\Linguist.Logger.csproj", "{B61BEBF7-CA0C-4721-97B2-8840CD466FA9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", "{7ECFF244-6128-416D-9642-7038C1925D9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linguist.ImageParser", "Linguist.ImageParser\Linguist.ImageParser.csproj", "{B9BD0148-816E-48F3-B856-3BA9B5C0596D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,9 +47,16 @@ Global
 		{B61BEBF7-CA0C-4721-97B2-8840CD466FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B61BEBF7-CA0C-4721-97B2-8840CD466FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B61BEBF7-CA0C-4721-97B2-8840CD466FA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9BD0148-816E-48F3-B856-3BA9B5C0596D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9BD0148-816E-48F3-B856-3BA9B5C0596D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9BD0148-816E-48F3-B856-3BA9B5C0596D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9BD0148-816E-48F3-B856-3BA9B5C0596D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B9BD0148-816E-48F3-B856-3BA9B5C0596D} = {7ECFF244-6128-416D-9642-7038C1925D9F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35

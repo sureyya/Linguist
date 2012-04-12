@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Linguist.Model;
 using Linguist.Repository.Repositories;
 
 namespace Linguist.Controllers
@@ -33,5 +34,16 @@ namespace Linguist.Controllers
             return View(articleRepository.GetArticle(id));
         }
 
+        public ActionResult Translate()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Translate(Translation translation)
+        {
+            translationRepository.SaveTranslation(translation);
+            return View();
+        }
     }
 }

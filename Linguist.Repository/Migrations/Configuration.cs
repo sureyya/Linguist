@@ -1,4 +1,4 @@
-using Linguist.Repository.Core;
+﻿using Linguist.Repository.Core;
 using System.Data.Entity.Migrations;
 using Linguist.Model;
 using System.Collections.Generic;
@@ -9,12 +9,12 @@ namespace Linguist.Repository.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(LinguistContext context)
         {
-            var article = new Article { Title = "First Test Article" };
+            var article = new Article { Title = "Hodně foukalo. I přesto Tsegay zaběhl pátý nejlepší čas historie" };
 
             var translation = new Translation
             {
@@ -34,58 +34,44 @@ namespace Linguist.Repository.Migrations
             var sentence = new Sentence();
             sentence.Words = new List<Word>();
             sentence.Order = 1;
-            sentence.Words.Add(new Word() { Order = 0, Text = "V" });
-            sentence.Words.Add(new Word() { Order = 1, Text = "Indick�m" });
-            sentence.Words.Add(new Word() { Order = 2, Text = "oce�nu" });
-            sentence.Words.Add(new Word() { Order = 3, Text = "asi" });
-            sentence.Words.Add(new Word() { Order = 4, Text = "370" });
-            sentence.Words.Add(new Word() { Order = 5, Text = "kilometru" });
-            sentence.Words.Add(new Word() { Order = 6, Text = "od" });
-            sentence.Words.Add(new Word() { Order = 7, Text = "Seychel" });
-            sentence.Words.Add(new Word() { Order = 8, Text = "se" });
-            sentence.Words.Add(new Word() { Order = 9, Text = "ocitla" });
-            sentence.Words.Add(new Word() { Order = 10, Text = "v" });
-            sentence.Words.Add(new Word() { Order = 11, Text = "pot��ch" });
-            sentence.Words.Add(new Word() { Order = 12, Text = "lod" });
-            sentence.Words.Add(new Word() { Order = 13, Text = "spolecnosti" });
-            sentence.Words.Add(new Word() { Order = 14, Text = "Costa," });
-            sentence.Words.Add(new Word() { Order = 15, Text = "jej�" });
-            sentence.Words.Add(new Word() { Order = 16, Text = "jedno" });
-            sentence.Words.Add(new Word() { Order = 17, Text = "plavidlo" });
-            sentence.Words.Add(new Word() { Order = 18, Text = "se" });
-            sentence.Words.Add(new Word() { Order = 19, Text = "v" });
-            sentence.Words.Add(new Word() { Order = 20, Text = "lednu" });
-            sentence.Words.Add(new Word() { Order = 21, Text = "potopilo" });
-            sentence.Words.Add(new Word() { Order = 22, Text = "u" });
-            sentence.Words.Add(new Word() { Order = 23, Text = "italsk�ch" });
-            sentence.Words.Add(new Word() { Order = 24, Text = "brehu," });
-            sentence.Words.Add(new Word() { Order = 25, Text = "pricem�" });
-            sentence.Words.Add(new Word() { Order = 26, Text = "zahynulo" });
-            sentence.Words.Add(new Word() { Order = 27, Text = "32" });
-            sentence.Words.Add(new Word() { Order = 28, Text = "lid�" });
+            sentence.Words.Add(new Word() { Order = 0, Text = "Pražský" });
+            sentence.Words.Add(new Word() { Order = 1, Text = "půlmaraton" });
+            sentence.Words.Add(new Word() { Order = 2, Text = "vyhrál" });
+            sentence.Words.Add(new Word() { Order = 3, Text = "etiopský" });
+            sentence.Words.Add(new Word() { Order = 4, Text = "běžec" });
+            sentence.Words.Add(new Word() { Order = 5, Text = "Atsedu" });
+            sentence.Words.Add(new Word() { Order = 6, Text = "Tsegay" });
+            sentence.Words.Add(new Word() { Order = 7, Text = "v" });
+            sentence.Words.Add(new Word() { Order = 8, Text = "nejlepším" });
+            sentence.Words.Add(new Word() { Order = 9, Text = "letošním" });
+            sentence.Words.Add(new Word() { Order = 10, Text = "čase" });
+            sentence.Words.Add(new Word() { Order = 11, Text = "a" });
+            sentence.Words.Add(new Word() { Order = 12, Text = "pátém" });
+            sentence.Words.Add(new Word() { Order = 13, Text = "výkonu" });
+            sentence.Words.Add(new Word() { Order = 14, Text = "historie" });
+            sentence.Words.Add(new Word() { Order = 15, Text = "58:47" });
+            sentence.Words.Add(new Word() { Order = 16, Text = "minuty." });
+            
 
             var sentence2 = new Sentence();
             sentence2.Order = 2;
             sentence2.Words = new List<Word>();
-            sentence2.Words.Add(new Word() { Order = 1, Text = "Podle" });
-            sentence2.Words.Add(new Word() { Order = 2, Text = "internetov�ch" });
-            sentence2.Words.Add(new Word() { Order = 3, Text = "str�nek" });
-            sentence2.Words.Add(new Word() { Order = 4, Text = "Lloyd's" });
-            sentence2.Words.Add(new Word() { Order = 5, Text = "list" });
-            sentence2.Words.Add(new Word() { Order = 6, Text = "zacalo" });
-            sentence2.Words.Add(new Word() { Order = 7, Text = "v" });
-            sentence2.Words.Add(new Word() { Order = 8, Text = "pondel�" });
-            sentence2.Words.Add(new Word() { Order = 9, Text = "na" });
-            sentence2.Words.Add(new Word() { Order = 10, Text = "lodi" });
-            sentence2.Words.Add(new Word() { Order = 11, Text = "Costa" });
-            sentence2.Words.Add(new Word() { Order = 12, Text = "Allegra" });
-            sentence2.Words.Add(new Word() { Order = 13, Text = "horet" });
-            sentence2.Words.Add(new Word() { Order = 14, Text = "a" });
-            sentence2.Words.Add(new Word() { Order = 15, Text = "lod" });
-            sentence2.Words.Add(new Word() { Order = 16, Text = "se" });
-            sentence2.Words.Add(new Word() { Order = 17, Text = "ocitla" });
-            sentence2.Words.Add(new Word() { Order = 18, Text = "bez" });
-            sentence2.Words.Add(new Word() { Order = 19, Text = "proudu" });
+            sentence2.Words.Add(new Word() { Order = 1, Text = "Útok" });
+            sentence2.Words.Add(new Word() { Order = 2, Text = "na" });
+            sentence2.Words.Add(new Word() { Order = 3, Text = "světový" });
+            sentence2.Words.Add(new Word() { Order = 4, Text = "rekord" });
+            sentence2.Words.Add(new Word() { Order = 5, Text = "Zersenaye" });
+            sentence2.Words.Add(new Word() { Order = 6, Text = "Tadeseho" });
+            sentence2.Words.Add(new Word() { Order = 7, Text = "z" });
+            sentence2.Words.Add(new Word() { Order = 8, Text = "Eritrey," });
+            sentence2.Words.Add(new Word() { Order = 9, Text = "který" });
+            sentence2.Words.Add(new Word() { Order = 10, Text = "má" });
+            sentence2.Words.Add(new Word() { Order = 11, Text = "hodnotu" });
+            sentence2.Words.Add(new Word() { Order = 12, Text = "58:23," });
+            sentence2.Words.Add(new Word() { Order = 13, Text = "dnes" });
+            sentence2.Words.Add(new Word() { Order = 14, Text = "zhatil" });
+            sentence2.Words.Add(new Word() { Order = 15, Text = "vítr." });
+            
 
 
             sentence.Words[0].Translations.Add(translation);

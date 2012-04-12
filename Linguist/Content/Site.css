@@ -1,27 +1,27 @@
-﻿html {
-    background-color: #e2e2e2;
+﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=cyrillic-ext,cyrillic,latin,latin-ext);
+
+html {
+    background-color: #fff;
     margin: 0;
     padding: 0;
 }
 
 body {
     background-color: #fff;
-    border-top: solid 10px #000;
+    
     color: #333;
-    font-size: .85em;
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     margin: 0;
     padding: 0;
 }
 
-a:link, a:visited,
-a:active, a:hover {
-    color: #333;
-    outline: none;
-    padding-left: 3px;
-    padding-right: 3px;
-    text-decoration: underline;
+
+textarea { padding: 10px; width: 600px;  font-family: 'Segoe UI Light'; font-weight: 300; }
+
+
+.ui-button-text {
+    font-family: 'Segoe UI Light';
 }
+
 
 a:hover {
     background-color: #c7d1d6;
@@ -56,12 +56,12 @@ nav, section {
 
 h1, h2, h3,
 h4, h5, h6 {
-    color: #000;
+    
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
-h1 {
+/*h1 {
     font-size: 2em;
 }
 
@@ -79,7 +79,10 @@ h4 {
 
 h5, h6 {
     font-size: 1em;
-}
+}*/
+
+
+
 
 
 /* main layout
@@ -90,7 +93,7 @@ h5, h6 {
 }
 
 #body {
-    background-color: #efeeef;
+    background-color: #fff;
     clear: both;
     padding-bottom: 35px;
 }
@@ -107,8 +110,10 @@ h5, h6 {
 
 footer {
     clear: both;
-    background-color: #e2e2e2;
+    background-color: #fff;
     font-size: .8em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     height: 100px;
 }
 
@@ -166,9 +171,10 @@ footer {
 /* menu
 ----------------------------------------------------------*/
 ul#menu {
-    font-size: 1.3em;
-    font-weight: 600;
-    margin: 0;
+    font-size: 1.0em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin: 20;
     text-align: right;
 }
 
@@ -235,6 +241,34 @@ section.feature {
     width: 300px;
     float: left;
     padding: 10px;
+}
+
+
+.article-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold !important;
+    background-color: #fff;
+    color: #444;
+    text-decoration: none;
+    word-spacing: normal;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    font-size: 1.6em;
+}
+.article-text {
+ 
+   /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Segoe UI Light';
+    font-weight: 300;
+    background-color: #fff;
+    color: #444;
+    text-decoration: none;
+    word-spacing: normal;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    font-size: 1.4em;
 }
 
 /* ordered list */

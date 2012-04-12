@@ -19,5 +19,12 @@ namespace Linguist.Repository.Repositories
             
             return new NullTranslation(dbWord.Text);
         }
+
+        public void SaveTranslation(Translation translation)
+        {
+            DataContext.Words.First().Translations.Add(translation);
+
+            DataContext.SaveChanges();
+        }
     }
 }

@@ -1,0 +1,58 @@
+/*BUTTON STYLES*/
+
+
+.button {
+	margin:0 42px 35px 0;
+	line-height: 1;
+	text-decoration:none;
+	display: inline-block;
+	padding: 8px 12px;
+	font-family: Cantarell-Bold, Arial, sans-serif;
+	text-transform:uppercase;
+	font-size:22px;
+	letter-spacing:1px;
+	color:#fff;
+	cursor:pointer;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.40);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.40);
+	text-shadow: -1px -1px 0px rgba(0,0,0,0.15);
+	
+	background: #76bbc5 url('../images/overlay.png') left top repeat-x; /* fallback color + image */
+	background-image: -moz-linear-gradient(100% 100% 90deg, #76bbc5, #9ecbd1);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#9ecbd1), to(#76bbc5));
+}
+
+.button:hover {
+	opacity:0.9;
+}
+
+/*COLOR VARIANTS*/
+
+.steelblue {	
+	background: #4275a5 url('~/Images/FormElementImages/Button/overlay.png') left top repeat-x; /* fallback color + image */
+	background-image: -moz-linear-gradient(100% 100% 90deg, #4275a5, #6b93b7);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6b93b7), to(#4275a5));
+}
+.green {	
+	background: #9dc773 url('../images/overlay.png') left top repeat-x; /* fallback color + image */
+	background-image: -moz-linear-gradient(100% 100% 90deg, #9dc773, #afd18c);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#afd18c), to(#9dc773));
+}
+.pink {	
+	background: #c36997 url('../images/overlay.png') left top repeat-x; /* fallback color + image */
+	background-image: -moz-linear-gradient(100% 100% 90deg, #c36997, #d18cb0);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d18cb0), to(#c36997));
+}
+.orange {	
+	background: #d59155 url('../images/overlay.png') left top repeat-x; /* fallback color + image */
+	background-image: -moz-linear-gradient(100% 100% 90deg, #d59155, #e2aa7a);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e2aa7a), to(#d59155));
+}
+.gray {	
+	background: #a1a5a8 url('../images/overlay.png') left top repeat-x; /* fallback color + image */
+	background-image: -moz-linear-gradient(100% 100% 90deg, #a1a5a8, #b6bbbf1);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b6bbbf), to(#a1a5a8));
+}

@@ -1,0 +1,48 @@
+﻿
+<script type="text/javascript">
+    $(function () {
+        $("#wordType").buttonset();
+        $("#format").buttonset();
+        $("#markItUp").markItUp(mySettings);
+    });
+</script>
+
+<div id="wordType" data-bind="template: { name: 'type-template', foreach: types }"></div>
+<br/>
+<br/>
+
+<div id="format" data-bind="template: { name: 'case-template', foreach: cases }"></div>
+
+
+<script type="text/html" id="case-template">
+   <input type="radio" data-bind="attr: { id:$data,value:$data },checked:$parent.Case" name="radio" /><label data-bind="text: $data,attr: { for:$data }" ></label>
+</script>
+
+
+<script type="text/html" id="type-template">
+  <input type="radio" data-bind="attr: { id:$data,value:$data },checked:$parent.Type" name="radio2"  /><label data-bind="text: $data,attr: { for:$data }" ></label>
+</script>
+
+
+
+<br/>
+<br/>
+<textarea id="markItUp"  data-bind="value:Content"></textarea>
+
+
+​
+
+    <a href="#" class="button" data-bind="click:save">Save</a> 
+    <a href="#" class="button">Preview</a>
+
+@section scripts
+{
+    <script src="@Url.Content("~/Scripts/linguist.translate.js")" type="text/javascript"></script>
+} 
+
+
+
+    
+    
+    
+

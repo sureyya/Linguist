@@ -113,6 +113,9 @@
     <Compile Include="Utility\UnityDependencyResolver.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\NotInclude\reset.css" />
+    <Content Include="Content\styles.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -142,6 +145,8 @@
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\articleImages\metro_marathon.jpg" />
+    <Content Include="Images\FormElementImages\Button\overlay.png" />
     <Content Include="Scripts\3thParty\jquery-1.6.2-vsdoc.js" />
     <Content Include="Scripts\3thParty\jquery-1.6.2.js" />
     <Content Include="Scripts\3thParty\jquery-1.6.2.min.js" />
@@ -149,6 +154,7 @@
     <Content Include="Scripts\3thParty\jquery-ui-1.8.11.min.js" />
     <Content Include="Scripts\3thParty\jquery.caret.1.02.js" />
     <Content Include="Scripts\3thParty\jquery.caret.1.02.min.js" />
+    <Content Include="Scripts\3thParty\jquery.elastic.js" />
     <Content Include="Scripts\3thParty\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\3thParty\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\3thParty\jquery.validate-vsdoc.js" />
@@ -160,8 +166,44 @@
     <Content Include="Scripts\3thParty\knockout.js" />
     <Content Include="Scripts\3thParty\knockout.mapping-latest.debug.js" />
     <Content Include="Scripts\3thParty\knockout.mapping-latest.js" />
+    <Content Include="Scripts\3thParty\markitup\jquery.markitup.js" />
+    <Content Include="Scripts\3thParty\markitup\sets\default\images\bold.png" />
+    <Content Include="Scripts\3thParty\markitup\sets\default\images\clean.png" />
+    <Content Include="Scripts\3thParty\markitup\sets\default\images\image.png" />
+    <Content Include="Scripts\3thParty\markitup\sets\default\images\italic.png" />
+    <Content Include="Scripts\3thParty\markitup\sets\default\images\link.png" />
+    <Content Include="Scripts\3thParty\markitup\sets\default\images\list-bullet.png" />
+    <Content Include="Scripts\3thParty\markitup\sets\default\images\list-numeric.png" />
+    <Content Include="Scripts\3thParty\markitup\sets\default\images\picture.png" />
+    <Content Include="Scripts\3thParty\markitup\sets\default\images\preview.png" />
+    <Content Include="Scripts\3thParty\markitup\sets\default\images\stroke.png" />
+    <Content Include="Scripts\3thParty\markitup\sets\default\set.js" />
+    <Content Include="Scripts\3thParty\markitup\sets\default\style.css" />
+    <Content Include="Scripts\3thParty\markitup\skins\markitup\images\bg-container.png" />
+    <Content Include="Scripts\3thParty\markitup\skins\markitup\images\bg-editor-bbcode.png" />
+    <Content Include="Scripts\3thParty\markitup\skins\markitup\images\bg-editor-dotclear.png" />
+    <Content Include="Scripts\3thParty\markitup\skins\markitup\images\bg-editor-html.png" />
+    <Content Include="Scripts\3thParty\markitup\skins\markitup\images\bg-editor-json.png" />
+    <Content Include="Scripts\3thParty\markitup\skins\markitup\images\bg-editor-markdown.png" />
+    <Content Include="Scripts\3thParty\markitup\skins\markitup\images\bg-editor-textile.png" />
+    <Content Include="Scripts\3thParty\markitup\skins\markitup\images\bg-editor-wiki.png" />
+    <Content Include="Scripts\3thParty\markitup\skins\markitup\images\bg-editor-xml.png" />
+    <Content Include="Scripts\3thParty\markitup\skins\markitup\images\bg-editor.png" />
+    <Content Include="Scripts\3thParty\markitup\skins\markitup\images\handle.png" />
+    <Content Include="Scripts\3thParty\markitup\skins\markitup\images\menu.png" />
+    <Content Include="Scripts\3thParty\markitup\skins\markitup\images\submenu.png" />
+    <Content Include="Scripts\3thParty\markitup\skins\markitup\style.css" />
+    <Content Include="Scripts\3thParty\markitup\skins\simple\images\handle.png" />
+    <Content Include="Scripts\3thParty\markitup\skins\simple\images\menu.png" />
+    <Content Include="Scripts\3thParty\markitup\skins\simple\images\submenu.png" />
+    <Content Include="Scripts\3thParty\markitup\skins\simple\style.css" />
+    <Content Include="Scripts\3thParty\markitup\templates\preview.css" />
+    <Content Include="Scripts\3thParty\markitup\templates\preview.html" />
     <Content Include="Scripts\3thParty\modernizr-2.0.6-development-only.js" />
+    <Content Include="Scripts\3thParty\ToDictionary.js" />
     <Content Include="Scripts\linguist.article.js" />
+    <Content Include="Scripts\linguist.translate.js" />
+    <Content Include="Scripts\Tabzilla.js" />
     <Content Include="Unity.Mvc3.README.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -172,7 +214,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\3thParty\_references.js" />
     <Content Include="Scripts\3thParty\AjaxLogin.js" />
     <Content Include="Images\accent.png" />
@@ -194,11 +235,12 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Article\Translate.cshtml" />
     <None Include="_bin_deployableAssemblies\System.Web.Mvc.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.Http.WebHost.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.Http.SelfHost.dll" />
@@ -274,7 +316,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>55784</DevelopmentServerPort>
+          <DevelopmentServerPort>57445</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

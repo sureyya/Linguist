@@ -21,7 +21,8 @@ namespace Linguist.Utility
             //var bootstrapJs =BundleTable.Bundles.GetBundleFor( new Bundle("~/bootstrap/js", new JsMinify());
             var bootstrapJs = BundleTable.Bundles.GetBundleFor("~/Scripts/js");
             bootstrapJs.AddFile("~/Scripts/3thParty/knockout.js");
-            bootstrapJs.AddFile("~/Scripts/3thParty/knockout.mapping-latest.js");                        
+            bootstrapJs.AddFile("~/Scripts/3thParty/knockout.mapping-latest.js");
+            //bootstrapJs.AddFile("~/Scripts/Tabzilla.js");     
             bundles.Add(bootstrapJs);
         }
     }

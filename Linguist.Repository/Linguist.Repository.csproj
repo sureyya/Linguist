@@ -74,6 +74,10 @@
     <Compile Include="Migrations\201203291439511_initial.Designer.cs">
       <DependentUpon>201203291439511_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201204102200372_TypeAndCaseAdded.cs" />
+    <Compile Include="Migrations\201204102200372_TypeAndCaseAdded.Designer.cs">
+      <DependentUpon>201204102200372_TypeAndCaseAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ArticleRepository.cs" />

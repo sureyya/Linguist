@@ -7,11 +7,13 @@
 
 
 
-<h2>@Model.Title</h2>
+<h2 class="article-title">@Model.Title</h2>
 
-
+<br/>
+@*
+<img src="../../Images/articleImages/metro_marathon.jpg" width="400" height="320" />*@
 <article>
-  <div id="article" data-bind="template: { name: 'article-template', with: Article }"></div>
+    <div id="article" data-bind="template: { name: 'article-template', with: Article }"></div>
     <br />
 
     <div id="translatedText" data-bind="html:$data.Text" >
@@ -20,16 +22,13 @@
 </article>
 
 
-
-
-
-<script type="text/html" id="article-template">   
+<script type="text/html" id="article-template"  >   
     <!--ko with:Article -->   
-    <div data-bind="foreach:Sentences">
+    <div data-bind="foreach:Sentences" class="article-text">
         <span data-bind="foreach:Words">
             <span data-bind="click: selected,
                              text:$data.Text,
-                             style: { color: $data.BorderEnabled() ? 'red' : 'black'},
+                             style: { color: $data.BorderEnabled() ? 'red' : '#444'},
                              event: { mouseover: enableBorder, mouseout: disableBorder }"></span>                   
             </span>
         </div>
@@ -39,7 +38,8 @@
 
 @section scripts
 {
-    <script type="text/javascript">var _articleId = '@Model.Id';</script>    
+    <script type="text/javascript"> var _articleId = '@Model.Id';</script>    
     <script src="@Url.Content("~/Scripts/linguist.article.js")" type="text/javascript"></script>
+     
     
 }

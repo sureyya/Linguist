@@ -6,5 +6,7 @@ namespace Linguist.Repository.Repositories
     public interface ITranslationRepository
     {
         Translation GetFirstTranslation(Guid wordGuid);
+
+        void SaveTranslation(Translation translation);
     }
 }
