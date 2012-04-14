@@ -144,7 +144,6 @@
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Images\articleImages\metro_marathon.jpg" />
     <Content Include="Images\FormElementImages\Button\overlay.png" />
     <Content Include="Scripts\3thParty\jquery-1.6.2-vsdoc.js" />
     <Content Include="Scripts\3thParty\jquery-1.6.2.js" />
