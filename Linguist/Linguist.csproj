@@ -198,10 +198,8 @@
     <Content Include="Scripts\3thParty\markitup\templates\preview.css" />
     <Content Include="Scripts\3thParty\markitup\templates\preview.html" />
     <Content Include="Scripts\3thParty\modernizr-2.0.6-development-only.js" />
-    <Content Include="Scripts\3thParty\ToDictionary.js" />
     <Content Include="Scripts\linguist.article.js" />
     <Content Include="Scripts\linguist.translate.js" />
-    <Content Include="Scripts\Tabzilla.js" />
     <Content Include="Unity.Mvc3.README.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
