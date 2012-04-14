@@ -152,7 +152,6 @@
     <Content Include="Scripts\3thParty\jquery-ui-1.8.11.min.js" />
     <Content Include="Scripts\3thParty\jquery.caret.1.02.js" />
     <Content Include="Scripts\3thParty\jquery.caret.1.02.min.js" />
-    <Content Include="Scripts\3thParty\jquery.elastic.js" />
     <Content Include="Scripts\3thParty\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\3thParty\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\3thParty\jquery.validate-vsdoc.js" />
